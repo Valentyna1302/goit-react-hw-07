@@ -7,7 +7,7 @@ import s from "./ContactForm.module.css";
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
-    .min(3, "Too Short!")
+    .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required")
     .matches(/^[A-Za-zА-Яа-яЄєІіЇїҐґ-\s]+$/, "Invalid format"),
