@@ -10,7 +10,7 @@ const ContactSchema = Yup.object().shape({
     .min(2, "Too Short!")
     .max(50, "Too Long!")
     .required("Required")
-    .matches(/^[A-Za-zА-Яа-яЄєІіЇїҐґ-\s]+$/, "Invalid format test"),
+    .matches(/^[A-Za-zА-Яа-яЄєІіЇїҐґ-\s]+$/, "Invalid format"),
   number: Yup.string()
     .matches(/^\+?\d+([-\s]\d+)*$/, "Invalid format")
     .min(3, "Too Short!")
